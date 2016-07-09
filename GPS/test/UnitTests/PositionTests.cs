@@ -14,49 +14,49 @@ namespace Savage.GPS
         [Fact]
         public void LondonToSanFrancisco()
         {
-            double distance = _london.DistanceFrom(_sanFrancisco).Meters;
+            double distance = _london.DistanceFrom(_sanFrancisco).Kilometers;
             Assert.Equal(8619, Math.Round(distance, 0));
         }
 
         [Fact]
         public void LondonToTokyo()
         {
-            double distance = _london.DistanceFrom(_tokyo).Meters;
+            double distance = _london.DistanceFrom(_tokyo).Kilometers;
             Assert.Equal(9561, Math.Round(distance, 0));
         }
 
         [Fact]
         public void LondonToSydney()
         {
-            double distance = _london.DistanceFrom(_sydney).Meters;
+            double distance = _london.DistanceFrom(_sydney).Kilometers;
             Assert.Equal(16992, Math.Round(distance, 0));
         }
 
         [Fact]
         public void LondonToParis()
         {
-            double distance = _london.DistanceFrom(_paris).Meters;
+            double distance = _london.DistanceFrom(_paris).Kilometers;
             Assert.Equal(343, Math.Round(distance, 0));
         }
 
         [Fact]
         public void SydneyToLondon()
         {
-            double distance = _sydney.DistanceFrom(_london).Meters;
+            double distance = _sydney.DistanceFrom(_london).Kilometers;
             Assert.Equal(16992, Math.Round(distance, 0));
         }
 
         [Fact]
         public void SydneyToTokyo()
         {
-            double distance = _sydney.DistanceFrom(_tokyo).Meters;
+            double distance = _sydney.DistanceFrom(_tokyo).Kilometers;
             Assert.Equal(7823, Math.Round(distance, 0));
         }
 
         [Fact]
         public void SydneyToSanFrancisco()
         {
-            double distance = _sydney.DistanceFrom(_sanFrancisco).Meters;
+            double distance = _sydney.DistanceFrom(_sanFrancisco).Kilometers;
             Assert.Equal(11945, Math.Round(distance, 0));
         }
 

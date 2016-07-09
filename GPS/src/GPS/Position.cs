@@ -32,7 +32,7 @@ namespace Savage.GPS
 
             double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
 
-            return Distance.NewFromMeters(radius * c);
+            return Distance.NewFromKilometers(radius * c);
         }
 
         private double ToRadians(double x)
