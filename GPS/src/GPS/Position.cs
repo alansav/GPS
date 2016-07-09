@@ -1,4 +1,5 @@
 ﻿using System;
+using Savage.Measurements;
 
 namespace Savage.GPS
 {
@@ -32,7 +33,7 @@ namespace Savage.GPS
 
             double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
 
-            return Distance.NewFromMeters(radius * c);
+            return new Distance(radius * c, Measurements.UnitsOfMeasure.Distances.Kilometers);
         }
 
         private double ToRadians(double x)
