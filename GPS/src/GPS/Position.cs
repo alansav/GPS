@@ -5,11 +5,11 @@ namespace Savage.GPS
 {
     public class Position
     {
-        public Position(double longitude, double latitude, Distance accuracy)
+        public Position(double longitude, double latitude, Distance accuracy = null)
         {
             Longitude = longitude;
             Latitude = latitude;
-            Accuracy = accuracy;
+            Accuracy = accuracy == null ? new Distance(0, Measurements.UnitsOfMeasure.Distances.Meters) : accuracy;
         }
 
         public readonly double Longitude;

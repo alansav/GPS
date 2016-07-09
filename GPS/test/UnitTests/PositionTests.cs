@@ -12,6 +12,39 @@ namespace Savage.GPS
         readonly Position _paris = new Position(2.34, 48.86, new Measurements.Distance(0, Measurements.UnitsOfMeasure.Distances.Meters));
 
         [Fact]
+        public void Constructor_Should_assign_Latitude()
+        {
+            var sut = new Position(-0.1, 51.52);
+
+            Assert.Equal(51.52, sut.Latitude);
+        }
+
+        [Fact]
+        public void Constructor_Should_assign_Longitude()
+        {
+            var sut = new Position(-0.1, 51.52);
+
+            Assert.Equal(-0.1, sut.Longitude);
+        }
+
+        [Fact]
+        public void Constructor_Should_assign_Accuracy()
+        {
+            var accuracy = new Measurements.Distance(10, Measurements.UnitsOfMeasure.Distances.Meters);
+            var sut = new Position(-0.1, 51.52, accuracy);
+
+            Assert.Equal(accuracy, sut.Accuracy);
+        }
+
+        [Fact]
+        public void Constructor_Should_use_zero_distance_when_accuracy_is_null()
+        {
+            var sut = new Position(-0.1, 51.52);
+
+            Assert.Equal(0, sut.Accuracy.Value);
+        }
+
+        [Fact]
         public void LondonToSanFrancisco()
         {
             double distance = _london.DistanceFrom(_sanFrancisco).Value;
