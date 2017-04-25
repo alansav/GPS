@@ -1,20 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C4EB769D-D23A-48C1-84DB-AB9054B30B88}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{01D9A63F-E6E4-4910-9688-53D363519F40}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "GPS", "src\GPS\GPS.xproj", "{CDF545A1-0F9E-4E01-BEFA-4536DE57DF2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EA73B669-9209-4C9E-AFEA-E2D9BCEAC406}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "UnitTests", "test\UnitTests\UnitTests.xproj", "{17D0F209-5FDB-4D8F-B8E3-7928F1D7EF9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GPS", "src\GPS\GPS.csproj", "{CDF545A1-0F9E-4E01-BEFA-4536DE57DF2B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "test\UnitTests\UnitTests.csproj", "{17D0F209-5FDB-4D8F-B8E3-7928F1D7EF9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
