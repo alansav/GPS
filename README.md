@@ -1,5 +1,5 @@
 # GPS
-This project is a .NET Core class library.
+This project is a .NET Standard 2.0 class library.
 
 This project is designed to help developers when working with GPS. This provides a class which can store latitude & longitude and can calculate the distance between two GPS positions.
 
