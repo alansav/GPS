@@ -18,6 +18,6 @@ var distance = london.DistanceFrom(sanFrancisco);
 Console.WriteLine($"London is {distance.Kilometers} km from San Francisco");
 
 //Use ConvertKilometersToMiles function to display distance in miles
-var miles = Savage.Measurements.Distance.ConvertKilometersToMiles(distance.Kilometers);
+var miles = distance.Convert(Measurements.UnitsOfMeasure.Distances.Miles);
 Console.WriteLine($"London is {miles} miles from San Francisco");
 ```
