@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <VersionPrefix>1.2.0</VersionPrefix>
     <TargetFrameworks>netstandard2.0;net45;net46;</TargetFrameworks>
     <Title>GPS</Title>
     <Authors>Alan Savage</Authors>
@@ -10,10 +9,18 @@
     <PackageProjectUrl>https://github.com/alansav/GPS</PackageProjectUrl>
     <RepositoryUrl>https://github.com/alansav/GPS</RepositoryUrl>
     <PackageTags>GPS;Distance</PackageTags>
+    <PackageId>GPS</PackageId>
+    <Product>Savage.GPS</Product>
+    <!-- Version elements are intentionally empty as they are provided by the build process-->
+    <Version></Version>
+    <PackageVersion></PackageVersion>
+    <AssemblyVersion></AssemblyVersion>
+    <FileVersion></FileVersion>
+    <InformationalVersion></InformationalVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Measurements" Version="1.2.0" />
+    <PackageReference Include="Measurements" Version="1.2.3" />
   </ItemGroup>
 
 </Project>
